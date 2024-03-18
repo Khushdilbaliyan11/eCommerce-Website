@@ -1,0 +1,64 @@
+.images{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image fits without stretching */
+}
+.slider-container{
+    height: 100vh; 
+    position: relative;
+    margin: auto;
+    overflow: hidden; 
+}
+
+
+.slide{
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .text {
+    position: absolute;
+    transform: translateX(-50%); 
+    color: white;
+    margin-top: 25vh;
+    font-size: 40px;
+    height: fit-content;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.392);
+}
+
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

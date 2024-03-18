@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+  />
+ 
+  <script
+    src="https://kit.fontawesome.com/yourcode.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="offers.css">
+    <link rel="stylesheet" href="allProducts.css">
+    <title>Index</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+          <span class="logo">Shopify</span>
+          <button class="geo" onclick="getLocation()"><i class="fas fa-map-marker-alt"></i></button>
+        </div>
+        <div class="nav-mid">
+          <input class="search-bar"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search For A Product"/>
+            <button class="search-btn" type="submit"><i class="fas fa-search"></i></button></i>
+        </div>
+        <div class="nav-right">
+          <a href="#" class=" btns cart"><i class="fas fa-user-alt"></i></a>
+          <a href="#" class="btns user"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+
+      <!-- Offer -->
+
+      <section class="slider-container">
+        <div class="slide fade">
+            <div class="text" style="
+            margin-left: 20vw;">
+                <h1>Holi Sale!</h1>
+                <p>Upto 50% Off on top brands.
+                    <br>
+                    14th-20th March.
+                </p>
+            </div> 
+            <img class="images" src="/images/offer (1).jpg" alt="Offer 1"/>
+        </div>
+       <div class="slide fade">
+        <div class="text" style="
+        margin-left: 25vw;">
+            <h1>Holi Sale!</h1>
+            <p>Upto 50% Off on top brands.
+                <br>
+                14th-20th March.
+            </p>
+        </div> 
+            <img class="images" src="/images/offer (2).jpg" alt="Offer 2" />
+       </div>
+       <div class="slide fade">
+        <div class="text" style="
+        margin-left: 65vw;">
+            <h1>Holi Sale!</h1>
+            <p>Upto 50% Off on top brands.
+                <br>
+                14th-20th March.
+            </p>
+        </div> 
+            <img class="images" src="/images/offer (3).jpg" alt="Offer 3"/>
+       </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <!-- All Product -->
+        <hr>
+       
+        <section >
+            <h1 style="color: black; margin: 30px; text-align: center; font-size: 50px;">Our Products</h1>
+            <div class="products-container">
+            <div class="products">
+              <img src="images/product1.webp" alt="" />
+              <div class="details">
+                <h4>Aureila Kurta</h4>
+                <p>Women's Blue Kurta</p>
+                <span class="price">750</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product6.webp" alt="" />
+              <div class="details">
+                <h4>Red Tape</h4>
+                <p>Men's White Sneakers</p>
+                <span class="price">1299</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product7.webp" alt="" />
+              <div class="details">
+                <h4>Dressberry</h4>
+                <p>Women's White Flats</p>
+                <span class="price">599</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product8.jpg" alt="" />
+              <div class="details">
+                <h4>Timeswear</h4>
+                <p>Unisex Silver Wrist watch</p>
+                <span class="price">1999</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product9.jpg" alt="" />
+              <div class="details">
+                <h4>Rayban</h4>
+                <p>Sunglasses </p><span class="price">3999</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product2.webp" alt="" />
+              <div class="details">
+                <h4>Everstylish</h4>
+                <p>Bracelet Set</p>
+                <span class="price">302</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product3.webp" alt="" />
+              <div class="details">
+                <h4>Aureila Kurta</h4>
+                <p>Men's Kurta</p>
+                <span class="price">1922</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product4.webp" alt="" />
+              <div class="details">
+                <h4>Raymond</h4>
+                <p>Black Suit</p>
+                <span class="price">9998</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <div class="products">
+              <img src="images/product5.webp" alt="" />
+              <div class="details">
+                <h4>Max</h4>
+                <p>Women's Black Dress</p>
+                <span class="price">699</span><br />
+              </div>
+              <button>Add to Cart</button>
+            </div>
+            <button class="more">See More</button>
+        </div>
+          </section>
+
+          <script>
+            // nabar
+
+            const x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+            // offer
+            let slideIndex = 0;
+            const slides = document.getElementsByClassName("slide");
+
+            function showSlides() {
+                let i;
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            showSlides();
+          </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 60px;
+    position: static;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+.logo{
+    font-size: 30px;
+    font-style: italic;
+}
+.geo{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 25px;
+    height: 55Px;
+    border-radius: 55px;
+    width: 55px;
+}
+.geo:hover{
+    background-color: rgba(255, 255, 255, 0.419);
+}
+.nav-mid{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+}
+.search-bar{
+    width:60%;
+    height:60%;
+    border-radius: 20px;
+    text-align: center;
+    border-color: white;
+    border-style: solid;
+}
+.search-btn{
+    height: 60%;
+    width: 36px;
+    margin: 10px;
+}.nav-right {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-evenly;
+}
+
+.btns {
+    height: 55px; /* set the height to 100% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 55px;
+    border-radius: 55px;
+    list-style:  none;
+}
+.btns:hover {
+    background-color: rgba(255, 255, 255, 0.419);
+}
